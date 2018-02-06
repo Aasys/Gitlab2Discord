@@ -1,0 +1,10 @@
+discord_webhook_url: "DISCORD_WEBHOOK_URL"
+gitlab_token: "GITLAB_TOKEN"
+server_address: "0.0.0.0"
+server_port: 9999
+private_project_icons:
+  "SeamlessCompute/kafka": "https://cdn.discordapp.com/attachments/396460961659355136/410500355269459970/kafka.jpg"
+git_icons:
+  push_icon: "https://cdn.discordapp.com/attachments/396460961659355136/410496755226902529/git_push.png"
+  merge_icon: "https://cdn.discordapp.com/attachments/396460961659355136/410513262782971904/git_merge.png"
+  issue_icon: "https://cdn.discordapp.com/attachments/396460961659355136/410527994369540106/git_issue.png"
