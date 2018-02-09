@@ -81,7 +81,7 @@ class GitlabProcessor(object):
         webhook.set_desc(merge_request.description)
 
         webhook.add_field(name='Branch',
-                          value=merge_request.source_branch + ' ↦ ' + merge_request.target_branch)
+                          value=merge_request.source_branch + ' > ' + merge_request.target_branch)
 
         webhook.add_field(name='Status',
                           value=merge_request.state)
