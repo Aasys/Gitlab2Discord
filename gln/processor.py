@@ -7,7 +7,7 @@ class GitlabProcessor(object):
     def __init__(self, config):
         self.config = config
 
-    def get_webhook(self) -> Webhook:
+    def get_webhook(self):
         return Webhook(self.config['discord_webhook_url'])
 
     def set_private_project_image(self, project):
