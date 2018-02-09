@@ -116,7 +116,7 @@ class GitlabProcessor(object):
         webhook.add_field(name="Status",
                           value=issue.state)
 
-        if event['assignees'] is not None:
+        if 'assignees' in event and event['assignees'] is not None:
             assignees_text = ''
             for assignee in event['assignees']:
                 assignees_text += assignee['name'] + '; '

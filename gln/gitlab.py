@@ -121,7 +121,7 @@ class GlMergeRequest:
         merge_request.id = json_in['object_attributes']['iid']
         merge_request.description = json_in['object_attributes']['description'] \
             if json_in['object_attributes']['description'] is not None else ''
-        if json_in['assignee'] is not None:
+        if 'assignee' in json_in and json_in['assignee'] is not None:
             merge_request.assignee = GlUser.parse_json(json_in['assignee'])
         merge_request.project = GlProject.parse_json(json_in['project'])
         merge_request.user = GlUser.parse_json(json_in['user'])
